@@ -18,17 +18,16 @@ body{
 /* HEADER */
 
 header{
-    position:fixed;
+    position:absolute;
     top:0;
     left:0;
     width:100%;
-    padding:18px 8%;
-    background:rgba(0,0,0,0.85);
-    backdrop-filter:blur(10px);
+    padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     z-index:1000;
+    background:transparent;
 }
 
 .logo{
@@ -95,13 +94,14 @@ nav ul li a:hover{
     position:relative;
     z-index:2;
     color:#fff;
-    width:90%;
-    max-width:900px;
+    max-width:800px;
+    padding:0 20px;
 }
 
 .hero-content h1{
     font-size:4rem;
     margin-bottom:20px;
+    line-height:1.1;
 }
 
 .hero-content p{
@@ -407,20 +407,30 @@ footer{
 }
 @media(max-width:768px){
 
-    .card img{
-        height:220px;
+    header{
+        position:absolute;
+        padding:15px;
+        flex-direction:column;
+        gap:10px;
+        background:transparent;
     }
 
-    .card h3{
-        font-size:18px;
+    .logo{
+        font-size:1.4rem;
     }
 
-    .card p{
-        font-size:16px;
+    nav ul{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    .card a{
-        padding:12px;
+    nav ul li a{
+        font-size:14px;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
     }
 }
 .card img{
