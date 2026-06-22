@@ -144,6 +144,152 @@ section h2{
 
 /* BOOKING */
 
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    background:transparent;
+}
+
+.logo{
+    color:#fff;
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.logo i{
+    color:#ffb703;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffb703;
+}
+
+.nav-btn{
+    text-decoration:none;
+    background:#ffb703;
+    color:#000;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600") center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    max-width:800px;
+    padding:0 20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    background:#ffb703;
+    color:#000;
+    padding:14px 28px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.secondary{
+    background:#fff;
+}
+
+/* SECTION TITLE */
+
+section h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+/* BOOKING */
+
 .booking-section{
     padding:90px 8%;
     background:#fff;
@@ -177,7 +323,285 @@ section h2{
 .booking-form button:hover{
     opacity:.9;
 }
+.booking-subtitle{
+    text-align:center;
+    color:#666;
+    margin-top:-20px;
+    margin-bottom:30px;
+}
 
+/* VEHICLES */
+
+.vehicles{
+    padding:100px 8%;
+}
+
+.vehicle-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 15px;
+    color:#ff6b00;
+    font-weight:700;
+}
+
+.card a{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:#ffb703;
+    color:#000;
+    padding:14px;
+    font-weight:600;
+}
+
+.cars-title{
+    margin-top:80px;
+}
+
+/* WHY US */
+
+.why-us{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#f7f7f7;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.feature i{
+    font-size:45px;
+    color:#ffb703;
+    margin-bottom:15px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+/* REVIEWS */
+
+.reviews{
+    padding:100px 8%;
+}
+
+.review-box{
+    background:#fff;
+    max-width:700px;
+    margin:20px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:100px 8%;
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+
+.contact-info{
+    margin-bottom:30px;
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.contact-info i{
+    color:#ffb703;
+    margin-right:8px;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.call-btn,
+.whatsapp-btn{
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.call-btn{
+    background:#ffb703;
+    color:#000;
+}
+
+.whatsapp-btn{
+    background:#25d366;
+    color:#fff;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 5%;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    section h2{
+        font-size:2rem;
+    }
+
+    .contact-info p{
+        font-size:15px;
+    }
+
+    .vehicle-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero-content h1{
+        font-size:1.9rem;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .booking-form{
+        grid-template-columns:1fr;
+    }
+
+    .contact-buttons{
+        flex-direction:column;
+    }
+
+    .call-btn,
+    .whatsapp-btn{
+        width:100%;
+    }
+}
+@media(max-width:768px){
+
+    header{
+        position:absolute;
+        padding:15px;
+        flex-direction:column;
+        gap:10px;
+        background:transparent;
+    }
+
+    .logo{
+        font-size:1.4rem;
+    }
+
+    nav ul{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+}
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+.card{
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+}
 /* VEHICLES */
 
 .vehicles{
