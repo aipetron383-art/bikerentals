@@ -874,3 +874,29 @@ footer{
     object-fit:cover;
     display:block;
 }
+.date-time{
+    display:flex;
+    gap:15px;
+    width:100%;
+}
+
+.date-time input{
+    flex:1;
+    height:60px;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:0 15px;
+    font-size:16px;
+    background:#fff;
+}
+@media(max-width:768px){
+
+    .date-time{
+        display:flex;
+        gap:12px;
+    }
+
+    .date-time input{
+        width:50%;
+    }
+}
